@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #1e1e2e;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Title */
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #f1c40f;
+    margin-bottom: 20px;
+}
+
+/* Adjusted Typing Box */
+#text-container {
+    font-size: 32px;
+    text-align: center;
+    user-select: none; /* Prevents text selection */
+    background: #282A36;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(255, 165, 0, 0.2);
+    width: 90vw; /* Slightly smaller than full width */
+    max-width: 1300px; /* Keeps it balanced on large screens */
+    height: 250px; /* Comfortable height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+/* Typing Text */
+#text-to-type span {
+    font-size: 32px;
+    font-weight: bold;
+    transition: 0.1s;
+}
+
+.correct {
+    color: #ffffff; /* White for correct letters */
+}
+
+.incorrect {
+    color: #ff8080; /* Very light red for incorrect letters */
+}
+
+.upcoming {
+    color: #aaa; /* Light gray for upcoming letters */
+}
+
+/* Hide the input field */
+#hidden-input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Stats Section - Horizontal Layout */
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 80px; /* More space between stats */
+    margin-top: 10px;
+}
+
+.stat-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px 50px;
+    border-radius: 8px;
+    font-size: 22px;
+    text-align: center;
+}
+
+/* Restart Button */
+#restart {
+    background: #ffcc00;
+    color: #1e1e2e;
+    font-size: 22px;
+    font-weight: bold;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+#restart:hover {
+    background: #ff9900;
+    box-shadow: 0 0 15px rgba(255, 165, 0, 0.6);
+}
