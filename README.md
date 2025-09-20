@@ -22,7 +22,7 @@ Inspired by [Monkeytype](https://monkeytype.com), with a minimal and responsive 
 
 ### 1. Clone the repository
     ```bash
-git clone https://github.com/your-username/typing-speed-test.git
+git clone https://github.com/your-username/Typing-Speed-Evaluator.git
 cd typing-speed-test
 ### 2. Open in your browser
 
